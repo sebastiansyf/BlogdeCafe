@@ -7,6 +7,7 @@
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
+    --amarillo: rgb(252, 252, 145);
 }
 
 html{
@@ -104,7 +105,13 @@ color: var(--blanco);
 }
 .logo__nombre{
 font-weight: 400;
+transition: all 0.3s ease-in-out;
 }
+
+.logo__nombre:hover{
+color: var(--amarillo);
+}
+
 .logo__bold{
     font-weight: 700;
 }
@@ -120,6 +127,11 @@ font-weight: 400;
  text-align: center;
  font-size: 1.8rem;
  color: var(--blanco);
+ transition: all 0.3s ease-in-out;
+}
+
+.navegacion__enlace:hover{
+    color: var(--amarillo);
 }
 
 /** Blog **/
@@ -152,6 +164,7 @@ font-weight: 400;
     font-weight: 700;
     margin-bottom: 2rem;
     border: none;
+    transition: all 0.3s ease;
     
 }
 
@@ -162,6 +175,8 @@ font-weight: 400;
 }
 .boton:hover{
     cursor: pointer;
+    color: var(--amarillo);
+    box-shadow: 0px 0px 2px var(--negro);
 }
 
 .boton--primario{
